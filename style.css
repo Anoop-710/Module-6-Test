@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    
+
+}
+
+.header{
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,47,1) 35%);
+    color: white;
+    width: 100vw;
+    height: 7vh;
+}
+
+#registration-form{
+    width: 800px;
+    margin: auto;
+}
+
+#email{
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.valid-feedback, .invalid-feedback{
+    display: none;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#password, #confirm-password{
+    border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+
+@media (max-width:900px){
+    body{
+        background-color: #8EC5FC;
+        background-image: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #registration-form{
+        width: 600px;
+        margin: auto;
+    }
+}
+
+@media (max-width:700px){
+    #registration-form{
+        width: 450px;
+        margin: auto;
+    }
+}
+
+@media (max-width:450px){
+    #registration-form{
+        width: 350px;
+        margin: auto;
+    }
+}
